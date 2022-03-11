@@ -59,7 +59,7 @@
     </main>
 
     <section class="container mx-auto">
-        <div>
+        <div class="my-5">
             <h2>Difference between Local Storage and Session Storage</h2>
             <li>Local storage and session storage are quite similar, although there is a slight difference between them.
             </li>
@@ -75,6 +75,19 @@
             <li>The storage capacity of Session storage is 5MB.</li>
             <li>In Session storage Changes of data is saved and available for current page.</li>
             <li>Session storage data is deleted when the window is closed.</li>
+        </div>
+
+        <div class="mb-5">
+            <h2>What dose Js event loop do? </h2>
+            <li>The four major things in event loop are Heap, Stack, Queue and Web Api</li>
+            <li>Event loop works in a asynchronous way</li>
+            <li>Normally every function stored top to bottom in 'Stack' and execute their result one by one.</li>
+            <li>But if any function makes any delay to execute it's result, stack throw this function in 'Web Api' to
+                fullfill function's internal work. In the meantime 'Stack' calls next fuction which also return their
+                results.</li>
+            <li>After fullfill internal operations function's result appeared in Messages 'Queue' </li>
+            <li>When 'Stack' got full empty, 'Queue' start delever messages into 'Stack' and 'Stack' do final execution
+                for waited function.</li>
         </div>
 
     </section>
